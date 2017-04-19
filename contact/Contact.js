@@ -1,6 +1,4 @@
-// Contact.js
 var mongoose = require('mongoose');  
-
 var ContactSchema = new mongoose.Schema({  
   name: String,
   company: String,
@@ -25,7 +23,6 @@ var ContactSchema = new mongoose.Schema({
     longitude: Number
   },	 
 });
+
 mongoose.model('Contact', ContactSchema);
-
-
 module.exports = mongoose.model('Contact');
